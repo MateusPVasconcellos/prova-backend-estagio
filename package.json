@@ -1,0 +1,46 @@
+{
+  "name": "prova-estagio",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "prova para estagio back-end",
+  "main": "index.js",
+  "scripts": {
+    "migration:run": "npx sequelize-cli db:migrate",
+    "desafios": "cd desafios && node e1 && node e2 && node e3 && node e4 && node e5 && node e6 && node e7 && node e8 && node e9 && node e10 && node e11 && node e12",
+    "lint": "eslint --ignore-path .gitignore .",
+    "test": "NODE_OPTIONS='--experimental-vm-modules --experimental-specifier-resolution=node' jest",
+    "start": "cd backend && npx sequelize-cli db:migrate && node app.js"
+  },
+  "keywords": [
+    "back-end"
+  ],
+  "author": "Mateus de Paula Vasconcellos",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.2.0",
+    "joi": "^17.5.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.13.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.16.9",
+    "babel-register": "^6.26.0",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^25.7.0",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "sequelize-cli": "^6.4.1"
+  }
+}
